@@ -25,6 +25,5 @@ SECRET=YOUR_SECRET_HERE
 - [ ] Start coding!
 
 # Planning
-##Wireframes
 (https://imgur.com/iHjt1bG.png)
 (https://imgur.com/gFag5GM.png)
