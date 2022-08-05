@@ -25,5 +25,5 @@ SECRET=YOUR_SECRET_HERE
 - [ ] Start coding!
 
 # Planning
-(https://imgur.com/iHjt1bG.png)
-(https://imgur.com/gFag5GM.png)
+https://imgur.com/iHjt1bG.png
+https://imgur.com/gFag5GM.png
