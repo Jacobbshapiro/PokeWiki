@@ -23,3 +23,8 @@ SECRET=YOUR_SECRET_HERE
   - [ ] make a commit on your local computer and then push to github
 - [ ] install a component library or place a CSS CDN in your `public/index.html`
 - [ ] Start coding!
+
+# Planning
+##Wireframes
+(https://imgur.com/iHjt1bG.png)
+(https://imgur.com/gFag5GM.png)
