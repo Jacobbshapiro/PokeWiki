@@ -1,5 +1,4 @@
 # Wireframes
 
-https://imgur.com/iHjt1bG.png
-https://imgur.com/gFag5GM.png
-![Black Jack wireframe](https://i.imgur.com/ynw9mTp.png)
+![PokeWiki Wireframe](https://i.imgur.com/iHjt1bG.png)
+![PokeWiki Wireframe](https://i.imgur.com/gFag5GM.png)
