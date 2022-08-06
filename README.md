@@ -1,3 +1,6 @@
+# PokiWiki
+(description of app)
+
 # Wireframes
 
 ![PokeWiki Wireframe](https://i.imgur.com/iHjt1bG.png)
