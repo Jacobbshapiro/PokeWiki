@@ -12,7 +12,9 @@ export default function NavBar({ user, setUser }) {
     <nav>
       <span>Welcome To PokeWiki, {user.name}</span>
       &nbsp; | &nbsp;
-      <Link to="/index">All Pokemon</Link>
+      <Link to="/index">Search</Link>
+      &nbsp; | &nbsp;
+      <Link to="/AllPokemon">All Pokemon</Link>
       &nbsp; | &nbsp;
       <Link to="" onClick={handleLogOut}>
         Log Out
