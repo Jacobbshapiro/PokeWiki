@@ -34,7 +34,7 @@ export default function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route path="/AllPokemon" element={<AllPokemon pokemonData={pokemonData} getPokemon={getPokemon} pokemon={pokemon} />}/>
+            <Route path="/AllPokemon" element={<AllPokemon pokemonData={pokemonData} getPokemon={getPokemon} pokemon={pokemon} setPokemon={setPokemon} />}/>
             <Route path="/index" element={<IndexView  setPokemon={setPokemon} getPokemon={getPokemon} pokemonData={pokemonData} pokemonType={pokemonType} pokemon={pokemon} />} />
           </Routes>
         </>
