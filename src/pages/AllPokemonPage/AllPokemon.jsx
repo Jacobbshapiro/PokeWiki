@@ -4,23 +4,22 @@ import PokemonCard from "../../components/PokemonCard/PokemonCard"
 export default function AllPokemon () {
     const [allPokemonData, setAllPokemonData] = useState([])
 
-    fetch('https://pokeapi.co/api/v2/pokemon/')
+    useEffect(function(){
+        fetch('https://pokeapi.co/api/v2/pokemon/')
         .then((response) => response.json())
-        .then((pokemonData) => console.log(pokemonData));
-    
-    useEffect(() => {
-        getPokemon().then((pokemonData) => {
-            setPokemon(pokemonData);
-        });
-    }, []);
+        .then((pokemonData) => 
+            {
+                console.log(pokemonData.results)
+                setAllPokemonData(pokemonData.results)
+            });
+    }, [])
 
     return(
         <>
             <h1>All Pokemon</h1>
-            {console.log(pokemonData, "this is the log")}
             
-            {pokemonData.map((pokemon, idx) => {
-                <PokemonCard pokemon={pokemon} key={idx} />;
+            {allPokemonData.map((pokemon, idx) => {
+               return <PokemonCard pokemon={pokemon} key={idx} />;
             })}
             <footer className="footer">PokeWiki by Jacob Shapiro</footer>
         </>

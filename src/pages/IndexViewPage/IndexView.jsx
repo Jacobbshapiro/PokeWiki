@@ -59,11 +59,12 @@ export default function IndexView({ setPokemon, getPokemon, pokemonData, pokemon
                                     <div className="cell">Health Points</div>
                                     <div className="cell">{data.stats[0].base_stat}</div>
                                 </div>
-                            </div>
+                            </div>                
                         </div>
                     </div>
                 )
             })}
+            
         <footer className="footer">PokeWiki by Jacob Shapiro</footer>
         </div>
     )
