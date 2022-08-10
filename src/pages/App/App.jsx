@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios"
 import { Routes, Route } from "react-router-dom";
 import { getUser } from "../../utilities/users-service";
@@ -17,7 +17,7 @@ export default function App() {
   const getPokemon = async () => {
     const toArr = [];
     try {
-      const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
+      const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}/`
       const res = await axios.get(url)
       toArr.push(res.data)
       setPokemonType(res.data.types[0].type.name)
@@ -34,7 +34,7 @@ export default function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route path="/AllPokemon" element={<AllPokemon pokemonData={pokemonData} getPokemon={getPokemon} pokemon={pokemon} setPokemon={setPokemon} />}/>
+            <Route path="/AllPokemon" element={<AllPokemon />}/>
             <Route path="/index" element={<IndexView  setPokemon={setPokemon} getPokemon={getPokemon} pokemonData={pokemonData} pokemonType={pokemonType} pokemon={pokemon} />} />
           </Routes>
         </>
