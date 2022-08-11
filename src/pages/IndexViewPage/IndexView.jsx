@@ -1,5 +1,3 @@
-import "./IndexView.css"
-
 export default function IndexView({ setPokemon, getPokemon, pokemonData, pokemonType, pokemon }) {
 
     const handleChange = (e) => {

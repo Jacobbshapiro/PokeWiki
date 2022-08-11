@@ -5,7 +5,7 @@ export default function AllPokemon () {
     const [allPokemonData, setAllPokemonData] = useState([])
 
     useEffect(function(){
-        fetch('https://pokeapi.co/api/v2/pokemon/')
+        fetch('https://pokeapi.co/api/v2/pokemon/?limit=1100&offset=20')
         .then((response) => response.json())
         .then((pokemonData) => 
             {
@@ -18,9 +18,11 @@ export default function AllPokemon () {
         <>
             <h1>All Pokemon</h1>
             
+            <div className="container">
             {allPokemonData.map((pokemon, idx) => {
                return <PokemonCard pokemon={pokemon} key={idx} />;
             })}
+            </div>
             <footer className="footer">PokeWiki by Jacob Shapiro</footer>
         </>
     )
