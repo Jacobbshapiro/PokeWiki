@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect} from "react"
 import PokemonCard from "../../components/PokemonCard/PokemonCard"
 
 export default function AllPokemon () {
@@ -17,12 +17,12 @@ export default function AllPokemon () {
     return(
         <>
             <h1>All Pokemon</h1>
-            
-            <div className="container">
-            {allPokemonData.map((pokemon, idx) => {
-               return <PokemonCard pokemon={pokemon} key={idx} />;
-            })}
-            </div>
+
+                <div className="container">
+                    {allPokemonData.map((pokemon, idx) => {
+                    return <PokemonCard pokemon={pokemon} key={idx} />;
+                    })}
+                </div>  
             <footer className="footer">PokeWiki by Jacob Shapiro</footer>
         </>
     )

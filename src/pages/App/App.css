@@ -1,16 +1,19 @@
 .App {
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: bold;
 }
 
 .pokemon-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 300px;
-  background-color: azure;
+  background-color: lightyellow;
   height: 150px;
   margin-bottom: 15px;
   margin-right: 15px;
+  border: solid;
 }
 
 .pokemon-card:hover {
@@ -31,8 +34,33 @@
   left:0;
   right:0;
   bottom: 0;
+  opacity: .7;
 }
 
 body {
-  background-color: blanchedalmond;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80ff523f-ff84-457d-a547-464588d3a3d3/df225ip-d77d50ee-431d-46fb-aa13-748160cbede4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgwZmY1MjNmLWZmODQtNDU3ZC1hNTQ3LTQ2NDU4OGQzYTNkM1wvZGYyMjVpcC1kNzdkNTBlZS00MzFkLTQ2ZmItYWExMy03NDgxNjBjYmVkZTQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mRRn7NHEnC1xxg6c2SMMMlO5-SYzLPUJ2cSwEhaECVY");
+}
+
+.search-container {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 750px;
+  background-color: lightyellow;
+  height: 500px;
+  margin-top: 60px;
+  margin-right: 150px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: space-around;
+  border: solid;
+}
+
+.img {
+  width: 350px;
+  height: 350px;
+}
+
+.input {
+  margin-top: 10px;
+  height: 20px;
 }

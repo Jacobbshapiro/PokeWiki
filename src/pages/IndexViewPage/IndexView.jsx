@@ -13,15 +13,17 @@ export default function IndexView({ setPokemon, getPokemon, pokemonData, pokemon
         <div className="index">
             <form className="input" onSubmit={handleSubmit}>
                 <label>
-                    <input type="text" onChange={handleChange} placeholder="Search Pokemon"></input>
+                    <input className="input" type="text" onChange={handleChange} placeholder="Search Pokemon"></input>
                 </label>
             </form>
             {pokemonData.map((data) => {
                 return (
-                    <div className="container">
-                        <img src={data.sprites['front_default']} />
+                    <div className="search-container">
+                        <img className="img" src={data.sprites['front_default']} />
                         <div className="table">
-                        <hr />
+                            <br />
+                            <br />
+                            <br />
                             <div className="body">
                                 <div className="row">
                                     <div className="cell">Name</div>
