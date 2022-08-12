@@ -1,3 +1,4 @@
+import "../../pages/App/App.css"
 import { useState } from 'react';
 import * as usersService from '../../utilities/users-service';
 
@@ -14,12 +15,8 @@ export default function LoginForm({ setUser }) {
   }
 
   async function handleSubmit(evt) {
-    // Prevent form from being submitted to the server
     evt.preventDefault();
     try {
-      // The promise returned by the signUp service method 
-      // will resolve to the user object included in the
-      // payload of the JSON Web Token (JWT)
       const user = await usersService.login(credentials);
       setUser(user);
     } catch {
@@ -29,12 +26,18 @@ export default function LoginForm({ setUser }) {
 
   return (
     <div>
-      <div className="form-container">
+      <div className="login-container">
         <form autoComplete="off" onSubmit={handleSubmit}>
+          <h2>Log In</h2>
+          <br />
           <label>Email</label>
           <input type="text" name="email" value={credentials.email} onChange={handleChange} required />
+          <br />
+          <br />
           <label>Password</label>
           <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
+          <br />
+          <br />
           <button type="submit">LOG IN</button>
         </form>
       </div>

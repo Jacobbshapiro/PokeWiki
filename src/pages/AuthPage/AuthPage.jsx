@@ -5,7 +5,6 @@ export default function AuthPage({ setUser }) {
     return (
         <main>
             <h1>Sign Up or Login</h1>
-            <hr />
             <br />
             <br />
             <br />

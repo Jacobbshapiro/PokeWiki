@@ -7,6 +7,7 @@ import AuthPage from "../AuthPage/AuthPage";
 import NavBar from "../../components/NavBar/NavBar";
 import IndexView from "../IndexViewPage/IndexView"
 import AllPokemon from "../AllPokemonPage/AllPokemon"
+import PokemonDetail from "../PokemonDetailPage/PokemonDetail"
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -34,8 +35,9 @@ export default function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route path="/AllPokemon" element={<AllPokemon />}/>
+            <Route path="/AllPokemon" element={<AllPokemon setPokemon={setPokemon} getPokemon={getPokemon} pokemonData={pokemonData} pokemonType={pokemonType} pokemon={pokemon} />}/>
             <Route path="/index" element={<IndexView  setPokemon={setPokemon} getPokemon={getPokemon} pokemonData={pokemonData} pokemonType={pokemonType} pokemon={pokemon} />} />
+            <Route path="/:pokemonId" element={<PokemonDetail />}></Route>
           </Routes>
         </>
       ) : (

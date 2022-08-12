@@ -9,15 +9,16 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 300px;
-  background-color: lightyellow;
+  background-color: rgba(231, 25, 25, 0.507);
   height: 150px;
   margin-bottom: 15px;
   margin-right: 15px;
   border: solid;
+  text-decoration: none;
 }
 
 .pokemon-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
 }
 
 .container {
@@ -26,6 +27,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  text-decoration: none;
 }
 
 .footer {
@@ -45,7 +47,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 750px;
-  background-color: lightyellow;
+  background-color: rgba(231, 25, 25, 0.507);
   height: 500px;
   margin-top: 60px;
   margin-right: 150px;
@@ -63,4 +65,34 @@ body {
 .input {
   margin-top: 10px;
   height: 20px;
+}
+
+.login-container {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  background-color: rgba(231, 25, 25, 0.507);
+  height: 210px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  border: solid;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.signup-container {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  background-color: rgba(231, 25, 25, 0.507);
+  height: 300px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  border: solid;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
