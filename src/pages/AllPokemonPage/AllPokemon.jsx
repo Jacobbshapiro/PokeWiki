@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect} from "react"
 import PokemonCard from "../../components/PokemonCard/PokemonCard"
 
-export default function AllPokemon ( {setPokemon, getPokemon, pokemonData, pokemonType, pokemon} ) {
+export default function AllPokemon () {
     const [allPokemonData, setAllPokemonData] = useState([])
 
     useEffect(function(){
@@ -18,16 +18,11 @@ export default function AllPokemon ( {setPokemon, getPokemon, pokemonData, pokem
     return(
         <>
             <h1>All Pokemon</h1>
-            
-                <div className="container">
-                    {allPokemonData.map((pokemon, idx) => {
-                        return (
-                            <Link to={`/PokemonDetail/${pokemon.name}`}>
-                                <PokemonCard pokemon={pokemon} key={idx} />
-                            </Link>
-                        )
-                    })}
-                </div>  
+            <div className="container">
+                {allPokemonData.map((pokemon, idx) => {
+                    return <PokemonCard pokemon={pokemon} key={idx} />;
+                })}
+            </div>
         </>
     )
 }
