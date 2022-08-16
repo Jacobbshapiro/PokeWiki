@@ -37,12 +37,13 @@ export default function App() {
           <Routes>
             <Route path="/AllPokemon" element={<AllPokemon setPokemon={setPokemon} getPokemon={getPokemon} pokemonData={pokemonData} pokemonType={pokemonType} pokemon={pokemon} />}/>
             <Route path="/index" element={<IndexView  setPokemon={setPokemon} getPokemon={getPokemon} pokemonData={pokemonData} pokemonType={pokemonType} pokemon={pokemon} />} />
-            <Route path="/:pokemonId" element={<PokemonDetail />}></Route>
+            <Route path="/PokemonDetail/:pokemonId" element={<PokemonDetail pokemon={pokemon} />}></Route>
           </Routes>
         </>
       ) : (
         <AuthPage setUser={setUser} />
       )}
+      <footer className="footer">PokeWiki by Jacob Shapiro</footer>
     </main>
   );
 }

@@ -64,8 +64,6 @@ export default function IndexView({ setPokemon, getPokemon, pokemonData, pokemon
                     </div>
                 )
             })}
-            
-        <footer className="footer">PokeWiki by Jacob Shapiro</footer>
         </div>
     )
 }

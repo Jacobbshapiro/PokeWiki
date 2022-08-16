@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect} from "react"
 import PokemonCard from "../../components/PokemonCard/PokemonCard"
-import PokemonDetailPage from "../PokemonDetailPage/PokemonDetail"
 
 export default function AllPokemon ( {setPokemon, getPokemon, pokemonData, pokemonType, pokemon} ) {
     const [allPokemonData, setAllPokemonData] = useState([])
@@ -19,14 +18,16 @@ export default function AllPokemon ( {setPokemon, getPokemon, pokemonData, pokem
     return(
         <>
             <h1>All Pokemon</h1>
-                <Link to={`/PokemonDetail/${pokemon.id}`}>
-                    <div className="container">
-                        {allPokemonData.map((pokemon, idx) => {
-                            return <PokemonCard pokemon={pokemon} key={idx} />;
-                        })}
-                    </div>
-                </Link>  
-            <footer className="footer">PokeWiki by Jacob Shapiro</footer>
+            
+                <div className="container">
+                    {allPokemonData.map((pokemon, idx) => {
+                        return (
+                            <Link to={`/PokemonDetail/${pokemon.name}`}>
+                                <PokemonCard pokemon={pokemon} key={idx} />
+                            </Link>
+                        )
+                    })}
+                </div>  
         </>
     )
 }
