@@ -18,8 +18,8 @@ https://trello.com/b/3E83v5Br/pokemon-react-project
 https://lucid.app/lucidchart/4af47d9a-a1cd-4aa6-a698-f1984fe1d7a8/edit?beaconFlowId=B55CFF594A0629B1&invitationId=inv_b488a443-40f4-47c6-964a-b07fa93f89ed&page=0_0#
 
 # Technologies
-https://pokeapi.co/
-React
-Node.js
-Express
-Mongo.db
+<li>https://pokeapi.co/</li>
+<li>React</li>
+<li>Node.js</li>
+<li>Express</li>
+<li>Mongo.db</li>
