@@ -2,7 +2,7 @@
 PokeWiki is a pokedex like app, made with PokeApi. This app allows a visitor to signup for a new account or login to an existing one. Once logged in, a user can search for any pokemon via input or browse the All Pokemon page. 
 
 # Icebox
-Some future features will include a Pokemon Detail page that is able to be accessed by clicking any specific pokemon card on the All Pokemon page. Another future feature will be a Favorite Pokemon page that is unique to ones own account.
+Some future features will include a Pokemon Detail page that is able to be accessed by clicking any specific pokemon card on the All Pokemon page. Another future feature will be a Favorite Pokemon page that is unique to ones own account. One more future feature will be implimetning usePagination to shorten the All Pokemon page.
 
 # Deployed App
 https://pokeyake.herokuapp.com/
